@@ -3,7 +3,7 @@
 Kerasで顔識別。Google colaboratoryで動作するサンプル。
 (2022/9/24)
 
-Qiita記事：[リンク予定](リンク予定)
+Qiita記事：[Kerasで顔識別](https://qiita.com/kiwsdiv/items/d5f6caf0f1a836b1bcf9)
 
 # Requirement
 
