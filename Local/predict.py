@@ -28,10 +28,11 @@ def img_predict(img):
     pred = model.predict(x)[0]
 
     # 結果を表示する
+    """
     print(classes[np.argmax(pred)] + ':{:.2f}'.format(pred[np.argmax(pred)] * 100) + '%')
     print(classes)
     print(pred * 100)
-
+    """
     return pred
 
 if __name__ == '__main__':
@@ -51,7 +52,11 @@ if __name__ == '__main__':
 
     # Prefict
     start_time = time.time()
-    img_predict(orgimg)
+    pred = img_predict(orgimg)
     end_time = time.time()
     proctime = end_time - start_time
+
+    print(classes[np.argmax(pred)] + ':{:.2f}'.format(pred[np.argmax(pred)] * 100) + '%')
+    print(classes)
+    print(pred * 100)
     print('Erapsed time  : {:.4f}'.format(proctime), '[s]')
