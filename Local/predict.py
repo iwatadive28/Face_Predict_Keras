@@ -36,18 +36,22 @@ def img_predict(img):
 
 if __name__ == '__main__':
 
-    Human = glob.glob('data/*')
-    ih = np.random.randint(len(Human))
-    test = glob.glob(Human[ih]+'/*')
-    i = np.random.randint(len(test))
+    who   = glob.glob('data/*')
+    ih    = np.random.randint(len(who))
+    files = glob.glob(who[ih]+'/*')
+    i     = np.random.randint(len(files))
+    fname = files[i]
+    print('Test filename : ' + fname)
 
-    orgimg = cv2.imread(test[i])
+    # 画像表示
+    orgimg = cv2.imread(fname)
     cv2.imshow("", orgimg)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
-    # 表示
+    # Prefict
     start_time = time.time()
-    img_predict(orgimg )
+    img_predict(orgimg)
     end_time = time.time()
-    print('Erapsed time: ', (end_time - start_time), '[s]')
+    proctime = end_time - start_time
+    print('Erapsed time  : {:.4f}'.format(proctime), '[s]')
