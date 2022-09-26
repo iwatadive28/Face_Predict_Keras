@@ -3,7 +3,7 @@
 Kerasで顔識別。Local PC上で動作するサンプル。
 (2022/9/26)
 
-Qiita記事：[リンク予定]()
+Qiita記事：[Colaboratoryで学習したモデル+CPU環境でハーフタレントの顔識別したときのメモ](https://qiita.com/kiwsdiv/items/2f72b20c345cbfeee34e)
 
 # Requirement
 
